@@ -8,69 +8,69 @@ class NewContactForm extends Component {
   render() {
     return (
       <form onSubmit={this.onSubmit} className="pb-5">
-        <div class="row">
-          <div class="col-sm">
+        <div className="row">
+          <div className="col-sm">
             <div className="form-group">
-              <label for="first-name">First Name</label>
-              <input id="first-name" type="text" class="form-control" />
+              <label htmlFor="first-name">First Name</label>
+              <input id="first-name" type="text" className="form-control" />
             </div>
           </div>
-          <div class="col-sm">
+          <div className="col-sm">
             <div className="form-group">
-              <label>Last Name</label>
-              <input type="text" class="form-control" />
+            <label htmlFor="last-name">Last Name</label>
+              <input type="text" className="form-control" />
             </div>
           </div>
         </div>
         <div className="row">
           <div className="col-sm">
             <div className="form-group">
-              <label>Email</label>
-              <input type="text" class="form-control" />
+            <label htmlFor="email">Email</label>
+              <input type="text" className="form-control" />
             </div>
           </div>
           <div className="col-sm">
             <div className="form-group">
-              <label>Phone Number</label>
-              <input type="text" class="form-control" />
+            <label htmlFor="phone-number">Phone Number</label>
+              <input type="text" className="form-control" />
             </div>
           </div>
         </div>
         <div className="row">
           <div className="col-md">
             <div className="form-group">
-              <label>Address Line 1</label>
-              <input type="text" class="form-control" />
+            <label htmlFor="address-line-1">Address Line 1</label>
+              <input type="text" className="form-control" />
             </div>
           </div>
           <div className="col-md">
             <div className="form-group">
-              <label>Address Line 2</label>
-              <input type="text" class="form-control" />
+            <label htmlFor="address-line-2">Address Line 2</label>
+              <input type="text" className="form-control" />
             </div>
           </div>
         </div>
         <div className="row">
           <div className="col-sm">
             <div className="form-group">
-              <label>City</label>
-              <input type="text" class="form-control" />
+            <label htmlFor="city">City</label>
+              <input type="text" className="form-control" />
             </div>
           </div>
           <div className="col-sm">
             <div className="form-group">
-              <label>State</label>
-              <input type="text" class="form-control" />
+            <label htmlFor="state">State</label>
+              <input type="text" className="form-control" />
             </div>
           </div>
         </div>
         <div className="form-group">
-          <label>Country</label>
-          <input type="text" class="form-control" />
+        <label htmlFor="country">Country</label>
+          <input type="text" className="form-control" />
         </div>
         <div className="form-group">
-          <label>Notes</label>
-          <input type="textarea" class="form-control" />
+        <label htmlFor="notes">Notes</label>
+          <input type="textarea" className="form-control" />
         </div>
         <button className="btn btn-lg btn-primary float-right" type="submit">
           Submit
