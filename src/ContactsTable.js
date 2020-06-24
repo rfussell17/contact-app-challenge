@@ -5,9 +5,9 @@ class ContactsTable extends Component {
     const dataRows = this.props.contacts.map(contact => {
         return (
             <tr>
-            <td>{contact.firstName}</td>
                 <td>{`${contact.firstName} ${contact.lastName}`}</td>
                 <td>{contact.phone}</td>
+                <td>{contact.email}</td>
                 <td>{`${contact.addressLine1} ${contact.addressLine2}`}</td>
                 <td>{`${contact.city}, ${contact.state}`}</td>
                 <td>{contact.country}</td>
@@ -17,11 +17,12 @@ class ContactsTable extends Component {
     });
 
     return (
-      <table>
-        <thead>
+      <table className="table table-bordered mt-5">
+        <thead className="thead-dark">
           <tr>
             <th>Name</th>
             <th>Phone</th>
+            <th>Email</th>
             <th>Address</th>
             <th>City/State</th>
             <th>Country</th>
