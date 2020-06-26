@@ -21,7 +21,7 @@ class App extends Component {
     ],
   };
 
-  render() {
+  render(props) {
     return (
       <div className="container">
         <h1 className="my-4">Contact Tracker!</h1>

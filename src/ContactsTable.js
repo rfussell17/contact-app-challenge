@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 class ContactsTable extends Component {
-  render() {
+  render(props) {
     return (
       <table className="table table-bordered mt-5">
         <thead className="thead-dark">
@@ -16,7 +16,10 @@ class ContactsTable extends Component {
           </tr>
         </thead>
         <tbody>
-          {/* Display table data here */}
+          {
+            console.log("this.props: ", this.props),
+            console.log("this.contacts: ", this.contacts)
+          }
         </tbody>
       </table>
     );
