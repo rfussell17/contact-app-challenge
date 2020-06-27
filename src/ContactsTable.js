@@ -5,8 +5,12 @@ class ContactsTable extends Component {
 
     const tableRows = [];
 
-    for(let i = 0; i < this.props.characters.length; i++){
-    tableRows = <td>{this.props.characters}</td>
+    for(let i = 0; i < this.props.contacts.length; i++){
+     // "inside the for loop create a variable to store the <tr> element 
+     // and then add that variable to the tableRows array
+     const row = <tr>{this.props.contacts[i].firstName}</tr>
+     tableRows.push(row);
+
     }
 
     return (
